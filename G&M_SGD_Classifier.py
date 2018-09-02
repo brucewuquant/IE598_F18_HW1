@@ -3,7 +3,7 @@
 #uses Iris database and SGD classifier
 import sklearn
 print( 'The scikit learn version is {}.'.format(sklearn.__version__))
-
+from sklearn.preprocessing import StandardScaler
 from sklearn import datasets
 iris = datasets.load_iris()
 X_iris, y_iris = iris.data, iris.target
